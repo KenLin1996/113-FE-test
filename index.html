@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dice practice</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .container {
+        display: inline-block;
+        /* margin: auto 0; */
+        margin-top: 20%;
+        /* background: lightgoldenrodyellow; */
+        overflow: hidden; /* 清除浮動 */
+      }
+
+      .dice {
+        float: left; /* 設置浮動 */
+        margin-right: 10px; /* 設置右側間距 */
+        position: relative;
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+        background: rgb(230, 228, 228);
+        box-shadow: 1px 2px 2px gray;
+      }
+
+      .red {
+        background: red;
+      }
+      .black {
+        background: black;
+      }
+      .point {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .c5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+      .l1 {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+
+        transform: translate(-50%, -50%);
+      }
+      .l4 {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+
+        transform: translate(-50%, -50%);
+      }
+      .l6 {
+        position: absolute;
+        top: 75%;
+        left: 25%;
+
+        transform: translate(-50%, -50%);
+      }
+      .r3 {
+        position: absolute;
+        top: 25%;
+        left: 75%;
+
+        transform: translate(-50%, -50%);
+      }
+      .r5 {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+
+        transform: translate(-50%, -50%);
+      }
+      .r9 {
+        position: absolute;
+        top: 75%;
+        left: 75%;
+
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dice">
+        <div class="point red c5"></div>
+      </div>
+      <div class="dice">
+        <div class="point black l1"></div>
+        <div class="point black r9"></div>
+      </div>
+      <div class="dice">
+        <div class="point black l1"></div>
+        <div class="point black c5"></div>
+        <div class="point black r9"></div>
+      </div>
+      <div class="dice">
+        <div class="point red l1"></div>
+        <div class="point red r3"></div>
+        <div class="point red l6"></div>
+        <div class="point red r9"></div>
+      </div>
+      <div class="dice">
+        <div class="point black l1"></div>
+        <div class="point black r3"></div>
+        <div class="point black c5"></div>
+        <div class="point black l6"></div>
+        <div class="point black r9"></div>
+      </div>
+      <div class="dice">
+        <div class="point black l1"></div>
+        <div class="point black r3"></div>
+        <div class="point black l4"></div>
+        <div class="point black r5"></div>
+        <div class="point black l6"></div>
+        <div class="point black r9"></div>
+      </div>
+    </div>
+  </body>
+</html>
